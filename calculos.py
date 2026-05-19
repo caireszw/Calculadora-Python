@@ -12,7 +12,7 @@ def soma():
     num2 = perguntar_num() 
     resnum = num1 + num2 
     linha = f'{num1} + {num2} = {resnum} \n'
-    with open('calculadora/historico.log','at') as arq:
+    with open('historico.log','at') as arq:
     
         arq.write(linha)
         
@@ -23,7 +23,7 @@ def subtrair():
     num2 = perguntar_num() 
     resnum = num1 - num2
     linha = f'{num1} - {num2} = {resnum}\n'
-    with open('calculadora/historico.log','at') as arq:
+    with open('historico.log','at') as arq:
     
         arq.write(linha)
     print(Panel(f'A subtração entre os valores [blue]{num1}[/] e [blue]{num2}[/] é de: [red]{resnum}[/]',width=54))
@@ -35,7 +35,7 @@ def dividir():
             num2 = perguntar_num() 
             resnum = num1 / num2
             linha = f'{num1} / {num2} = {resnum} \n'
-            with open('calculadora/historico.log','at') as arq:
+            with open('historico.log','at') as arq:
             
                 arq.write(linha)
             print(Panel(f'A divisão entre os valores [blue]{num1}[/] e [blue]{num2}[/] é de: [red]{resnum}[/]',width=54))
@@ -49,7 +49,7 @@ def multiplicar():
     num2 = perguntar_num() 
     resnum = num1 * num2
     linha = f'{num1} * {num2} = {resnum }\n'
-    with open('calculadora/historico.log','at') as arq:
+    with open('historico.log','at') as arq:
     
         arq.write(linha)
     print(Panel(f'A multiplicação entre os valores [blue]{num1}[/] e [blue]{num2}[/] é de: [red]{resnum}[/]',width=54))

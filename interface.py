@@ -22,12 +22,12 @@ def escolher_opcao(msg):
             print('DIGITE UMA OPÇÃO VALIDA')
 
 def apagarhistorico():
-    with open('calculadora/historico.log','w') as arq:
+    with open('historico.log','w') as arq:
         print('HISTORICO APAGADO COM SUCESSO!')
         
 def historico():
     
-    with open('calculadora/historico.log','r') as arq:
+    with open('historico.log','r') as arq:
         conteudo = arq.readlines()
         lin()
         if len(conteudo) > 0:   
